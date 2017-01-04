@@ -1,6 +1,9 @@
 <?php
+
+// With this line we avoid someone can open this controller using the path (ie: localhost/my_project/application/controllers/welcome)
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+// Always extended to CI_Controller
 class Welcome extends CI_Controller {
 
 	/**
@@ -20,6 +23,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		// We are loading a view called welcome_message.php
 		$this->load->view('welcome_message');
 	}
 }
