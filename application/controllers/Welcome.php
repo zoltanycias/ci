@@ -24,6 +24,6 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		// We are loading a view called welcome_message.php
-		$this->load->view('welcome_message');
+		$this->load->view('login');
 	}
 }
